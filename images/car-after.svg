@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-label="修理後のきれいな車">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf3fc"/>
+      <stop offset="1" stop-color="#dbeafb"/>
+    </linearGradient>
+    <linearGradient id="bodyA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e93ef"/>
+      <stop offset="1" stop-color="#1577d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="150" fill="url(#bgA)"/>
+  <ellipse cx="120" cy="126" rx="92" ry="9" fill="#1577d6" opacity="0.12"/>
+  <!-- 車体 -->
+  <path d="M34,112 Q24,112 24,100 L24,92 Q24,85 33,83 L62,79 L82,54 Q87,48 96,48 L150,48 Q160,48 166,55 L185,80 L210,84 Q220,86 220,96 L220,102 Q220,112 210,112 Z" fill="url(#bodyA)"/>
+  <!-- 窓 -->
+  <path d="M86,78 L99,57 L118,57 L118,78 Z" fill="#eaf6ff"/>
+  <path d="M124,57 L145,57 L162,78 L124,78 Z" fill="#eaf6ff"/>
+  <!-- ドアライン -->
+  <line x1="121" y1="82" x2="121" y2="108" stroke="#0f63b8" stroke-width="2"/>
+  <line x1="118" y1="95" x2="110" y2="95" stroke="#0f63b8" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- ヘッドライト -->
+  <ellipse cx="214" cy="93" rx="4" ry="5" fill="#fff8d6"/>
+  <!-- タイヤ -->
+  <circle cx="74" cy="112" r="20" fill="#1b2733"/>
+  <circle cx="74" cy="112" r="8.5" fill="#cfd8e3"/>
+  <circle cx="176" cy="112" r="20" fill="#1b2733"/>
+  <circle cx="176" cy="112" r="8.5" fill="#cfd8e3"/>
+  <!-- 光沢・キラキラ -->
+  <path d="M150,40 q1.4,5 6,6 q-4.6,1 -6,6 q-1.4,-5 -6,-6 q4.6,-1 6,-6 Z" fill="#ffd45e"/>
+  <path d="M176,30 q1,3.4 4,4 q-3,0.6 -4,4 q-1,-3.4 -4,-4 q3,-0.6 4,-4 Z" fill="#ffd45e"/>
+  <path d="M58,42 q0.8,3 3.4,3.6 q-2.6,0.6 -3.4,3.6 q-0.8,-3 -3.4,-3.6 q2.6,-0.6 3.4,-3.6 Z" fill="#9ccbf3"/>
+</svg>
