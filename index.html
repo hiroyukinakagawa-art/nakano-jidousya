@@ -71,7 +71,7 @@
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="9" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="15" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="9" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/></svg>
             無料見積り
           </a>
-          <a href="#contact" class="btn btn--line">
+          <a href="https://page.line.me/esi7824r" target="_blank" rel="noopener" class="btn btn--line">
             <span class="btn__lineicon">LINE</span>
             LINEで相談
           </a>
@@ -79,7 +79,11 @@
       </div>
 
       <div class="hero__media" aria-hidden="true">
-        <img class="hero__art" src="images/hero.svg" alt="">
+        <div class="hero__collage">
+          <span class="hero__photo hero__photo--car"><img src="images/hero-car.jpg" alt=""></span>
+          <span class="hero__photo hero__photo--mech"><img src="images/hero-mechanic.jpg" alt=""></span>
+          <span class="hero__photo hero__photo--family"><img src="images/hero-family.jpg" alt=""></span>
+        </div>
       </div>
     </div>
     <div class="hero__wave" aria-hidden="true"></div>
@@ -132,7 +136,7 @@
       <div class="slider">
         <button class="slider__arrow slider__arrow--prev" id="worksPrev" aria-label="前へ">‹</button>
         <div class="slider__track" id="worksTrack">
-          <article class="work">
+          <article class="work work--1">
             <div class="work__ba">
               <div class="ph ph--ba"><span class="work__tag">Before</span></div>
               <div class="ph ph--ba"><span class="work__tag work__tag--after">After</span></div>
@@ -141,7 +145,7 @@
             <h3 class="work__title">フロントバンパーのキズ</h3>
             <p class="work__price">修理費用目安 <strong>30,000円〜</strong></p>
           </article>
-          <article class="work">
+          <article class="work work--2">
             <div class="work__ba">
               <div class="ph ph--ba"><span class="work__tag">Before</span></div>
               <div class="ph ph--ba"><span class="work__tag work__tag--after">After</span></div>
@@ -150,7 +154,7 @@
             <h3 class="work__title">リアフェンダーのヘコミ</h3>
             <p class="work__price">修理費用目安 <strong>50,000円〜</strong></p>
           </article>
-          <article class="work">
+          <article class="work work--3">
             <div class="work__ba">
               <div class="ph ph--ba"><span class="work__tag">Before</span></div>
               <div class="ph ph--ba"><span class="work__tag work__tag--after">After</span></div>
@@ -159,7 +163,7 @@
             <h3 class="work__title">ドアのキズ・ヘコミ</h3>
             <p class="work__price">修理費用目安 <strong>40,000円〜</strong></p>
           </article>
-          <article class="work">
+          <article class="work work--4">
             <div class="work__ba">
               <div class="ph ph--ba"><span class="work__tag">Before</span></div>
               <div class="ph ph--ba"><span class="work__tag work__tag--after">After</span></div>
@@ -168,7 +172,7 @@
             <h3 class="work__title">リアバンパーのキズ</h3>
             <p class="work__price">修理費用目安 <strong>35,000円〜</strong></p>
           </article>
-          <article class="work">
+          <article class="work work--5">
             <div class="work__ba">
               <div class="ph ph--ba"><span class="work__tag">Before</span></div>
               <div class="ph ph--ba"><span class="work__tag work__tag--after">After</span></div>
@@ -177,7 +181,7 @@
             <h3 class="work__title">事故による大破修理</h3>
             <p class="work__price">修理費用目安 <strong>120,000円〜</strong></p>
           </article>
-          <article class="work">
+          <article class="work work--6">
             <div class="work__ba">
               <div class="ph ph--ba"><span class="work__tag">Before</span></div>
               <div class="ph ph--ba"><span class="work__tag work__tag--after">After</span></div>
@@ -241,7 +245,7 @@
 
   <!-- ===== 約束バンド ===== -->
   <section class="promise">
-    <div class="promise__photo ph" aria-hidden="true"><span class="ph__label">作業風景の写真</span></div>
+    <div class="promise__photo" aria-hidden="true"></div>
     <div class="promise__inner">
       <h2 class="promise__title">大切な車だから、<br>私たちは妥協しません。</h2>
       <p class="promise__text">小さなキズでも、事故修理でも。<br>お客様が安心して乗れる状態でお返しすることをお約束します。</p>
@@ -365,7 +369,7 @@
         </div>
         <div class="ccard ccard--line">
           <span class="ccard__cap">LINEで相談する</span>
-          <a href="#" class="ccard__btn ccard__btn--line"><span class="btn__lineicon">LINE</span>友だち追加</a>
+          <a href="https://page.line.me/esi7824r" target="_blank" rel="noopener" class="ccard__btn ccard__btn--line"><span class="btn__lineicon">LINE</span>友だち追加</a>
           <span class="ccard__sub">気軽に相談できます</span>
         </div>
         <div class="ccard">
@@ -415,10 +419,14 @@
   </div>
 
   <!--
-    画像について：
-    現在、写真部分は images/ 内のSVGイラスト（hero.svg / car-before.svg / car-after.svg）で表示。
-    実写真に差し替える場合は images/ に写真を保存し、該当箇所を <img> / background-image に置き換え。
-    差し替え対象：ヒーロー / 修理実績Before・After / 約束バンド背景。お客様の声はイニシャルアイコン（ダミー）。
+    画像について（提案用）：
+    写真は AI生成（ChatGPT画像API, gpt-image-1・低画質）の仮素材。images/ 内：
+      ヒーロー … hero-car.jpg / hero-mechanic.jpg / hero-family.jpg
+      Before/After … ba1〜ba6 の -before.jpg / -after.jpg（計12枚）
+      約束バンド背景 … promise.jpg
+    お客様が実際に撮った写真が手に入れば、同名で上書き or パス差し替えするだけで本番化できます。
+    （生成し直し: ai-pipeline/build-assets.mjs。旧SVG hero.svg等は未使用だが残置）
+    お客様の声はイニシャルアイコン（ダミー）。
     要対応リンク：LINE「友だち追加」(#) と お問い合わせフォーム(#) に実URLを設定。
     公開先：https://hiroyukinakagawa-art.github.io/nakano-jidousya/ （GitHub Pages, mainブランチ）
   -->

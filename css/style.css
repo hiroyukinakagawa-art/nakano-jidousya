@@ -128,7 +128,12 @@ ul, ol { list-style: none; }
 .hero__btns { display: flex; flex-wrap: wrap; gap: 14px; }
 
 .hero__media { position: relative; }
-.hero__art { width: 100%; max-width: 520px; height: auto; margin-inline: auto; display: block; filter: drop-shadow(0 18px 30px rgba(21,119,214,.18)); }
+.hero__collage { position: relative; width: 100%; max-width: 460px; margin-inline: auto; aspect-ratio: 1 / 1; }
+.hero__photo { position: absolute; overflow: hidden; border: 5px solid #fff; box-shadow: 0 16px 30px rgba(21,119,214,.20); background: var(--blue-50); }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero__photo--car    { width: 70%; height: 54%; left: 0; top: 23%; border-radius: 48% 52% 50% 50% / 50%; z-index: 1; }
+.hero__photo--mech   { width: 46%; height: 46%; right: 1%; top: 0; border-radius: 50%; z-index: 2; }
+.hero__photo--family { width: 52%; height: 47%; right: 0; bottom: 1%; border-radius: 50% 50% 52% 48% / 50%; z-index: 2; }
 
 /* ---------- 見出し共通 ---------- */
 .section { padding: clamp(54px, 8vw, 92px) 0; }
@@ -164,8 +169,18 @@ ul, ol { list-style: none; }
 .work__ba { position: relative; display: grid; grid-template-columns: 1fr 1fr; height: 150px; }
 .work__ba .ph--ba { height: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; }
 .work__ba .ph--ba::after { display: none; }
-.work__ba .ph--ba:nth-child(1) { background-image: url("../images/car-before.svg"); }
-.work__ba .ph--ba:nth-child(2) { background-image: url("../images/car-after.svg"); }
+.work--1 .ph--ba:nth-child(1) { background-image: url("../images/ba1-before.jpg"); }
+.work--1 .ph--ba:nth-child(2) { background-image: url("../images/ba1-after.jpg"); }
+.work--2 .ph--ba:nth-child(1) { background-image: url("../images/ba2-before.jpg"); }
+.work--2 .ph--ba:nth-child(2) { background-image: url("../images/ba2-after.jpg"); }
+.work--3 .ph--ba:nth-child(1) { background-image: url("../images/ba3-before.jpg"); }
+.work--3 .ph--ba:nth-child(2) { background-image: url("../images/ba3-after.jpg"); }
+.work--4 .ph--ba:nth-child(1) { background-image: url("../images/ba4-before.jpg"); }
+.work--4 .ph--ba:nth-child(2) { background-image: url("../images/ba4-after.jpg"); }
+.work--5 .ph--ba:nth-child(1) { background-image: url("../images/ba5-before.jpg"); }
+.work--5 .ph--ba:nth-child(2) { background-image: url("../images/ba5-after.jpg"); }
+.work--6 .ph--ba:nth-child(1) { background-image: url("../images/ba6-before.jpg"); }
+.work--6 .ph--ba:nth-child(2) { background-image: url("../images/ba6-after.jpg"); }
 .work__tag { position: absolute; top: 8px; left: 8px; background: rgba(27,39,51,.78); color: #fff; font-size: .72rem; font-weight: 700; padding: 3px 10px; border-radius: 6px; z-index: 2; }
 .work__tag--after { left: auto; right: 8px; background: var(--blue); }
 .work__go { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 34px; height: 34px; background: #fff; color: var(--blue); border-radius: 50%; display: grid; place-items: center; font-size: 1.4rem; box-shadow: var(--shadow-sm); z-index: 3; }
@@ -199,7 +214,7 @@ ul, ol { list-style: none; }
 
 /* ---------- 約束バンド ---------- */
 .promise { position: relative; color: #fff; overflow: hidden; }
-.promise__photo { position: absolute; inset: 0; }
+.promise__photo { position: absolute; inset: 0; background: var(--blue-100) url("../images/promise.jpg") center/cover no-repeat; }
 .promise__photo::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(100deg, rgba(15,99,184,.92) 30%, rgba(21,119,214,.6) 100%); }
 .promise__photo .ph__label { z-index: 0; }
 .promise__inner { position: relative; z-index: 2; max-width: var(--container); margin-inline: auto; padding: clamp(56px, 9vw, 100px) 20px; }
@@ -274,7 +289,7 @@ ul, ol { list-style: none; }
    ============================================ */
 @media (min-width: 768px) {
   .hero__inner { grid-template-columns: 1.05fr 1fr; align-items: center; padding-block: 56px 80px; }
-  .hero__media { height: 400px; }
+  .hero__media { height: auto; }
   .trust { grid-template-columns: repeat(3, 1fr); gap: 28px; }
   .work { width: 260px; }
   .insurance { grid-template-columns: 280px 1fr; align-items: center; gap: 40px; }
