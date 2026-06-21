@@ -99,6 +99,13 @@ ul, ol { list-style: none; }
 .nav__cta { background: var(--blue); color: #fff; padding: 10px 22px; border-radius: 999px; font-weight: 700; font-size: .9rem; box-shadow: var(--shadow-sm); transition: background .15s ease; }
 .nav__cta:hover { background: var(--blue-dark); }
 
+.header__right { display: flex; align-items: center; gap: 14px; }
+
+.langswitch { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; flex: 0 0 auto; }
+.langswitch__btn { padding: 6px 13px; font-size: .78rem; font-weight: 700; color: var(--gray); line-height: 1.4; transition: background .15s ease, color .15s ease; }
+.langswitch__btn.is-active { background: var(--blue); color: #fff; }
+.langswitch__btn:not(.is-active):hover { background: var(--blue-50); color: var(--blue); }
+
 .hamburger { display: none; flex-direction: column; justify-content: center; gap: 6px; width: 44px; height: 44px; background: none; border: none; cursor: pointer; }
 .hamburger span { display: block; width: 26px; height: 2px; background: var(--blue); transition: transform .3s ease, opacity .3s ease; }
 .hamburger.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
